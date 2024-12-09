@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+    {% include 'layouts/site-header.twig' %}
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/user">Пользователи</a>
+        <a href="/about">О нас</a>
+    </nav>
+        {% include content_template_name %}
+    </body>
+</html>
